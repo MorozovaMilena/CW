@@ -1,0 +1,18 @@
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int count = 1;
+Sequence(num, count);
+
+
+void Sequence(int n, int count)
+{
+    if (count > n)
+    {
+        return;
+    }
+    else
+    {
+        Sequence(n, count + 1);
+        Console.Write(count + " ");
+    }
+}
